@@ -15,7 +15,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
 
+p {
+  line-height: 1.5;
+}

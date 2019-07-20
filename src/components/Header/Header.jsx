@@ -2,6 +2,7 @@ import React from 'react';
 import "./style.scss";
 import logo from '../../images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,9 +11,9 @@ const Header = () => {
 
             <div className="header-nav">
                 <nav className="header-menu">
-                    <a href="#">Home</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Produtos</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/quem-somos">Sobre</Link>
+                    <Link to="/produtos">Produtos</Link>
                 </nav>
 
                 <div className="header-cart">
