@@ -1,0 +1,11 @@
+.title {
+    font-size: 30;
+    font-weight: 700;
+
+    &::after {
+        content: '';
+        border: 2px solid var(--primary);
+        width: 40px;
+        display: block;
+    }
+}

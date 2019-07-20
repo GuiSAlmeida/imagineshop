@@ -1,0 +1,43 @@
+.carousel {
+    border-top: 4px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 50px;
+
+    img {
+        display: block !important;
+    }
+}
+
+.banner-dots {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex !important;
+    justify-content: center;
+
+    li {
+        margin: 0 10px;
+
+        &.slick-active button {
+            background-color: var(--primary);
+            transform: scale(1.2);
+        }
+    }
+
+    button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--dark);
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        transition: all .3s ease;
+    }
+}
