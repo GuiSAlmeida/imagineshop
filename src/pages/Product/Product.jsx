@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import Title from '../../components/Title';
 import Card from '../../components/Card';
-import product from '../../images/product.jpg';
+import product6 from '../../images/product6.jpg';
+import product7 from '../../images/product7.jpg';
+import product8 from '../../images/product8.jpg';
+import product9 from '../../images/product9.jpg';
 import productImage from '../../images/product2.jpg';
 import Ads from '../../components/Ads';
 import ads3 from '../../images/ads3.jpg';
@@ -64,28 +67,28 @@ class Product extends Component {
 
           <div className="products-list">
             <Card
-              photo={product}
-              title="Smartphone Samsung Galaxy J8 64GB Dual Chip Android 8.0"
-              price="R$ 1.299,00"
-              instalments="10x de R$ 129,90 sem juros"
+              photo={product6}
+              title="iPhone 7 Plus 32GB Ouro Rosa Tela Retina HD 5,5"
+              price="R$ 3.299,00"
+              instalments="10x de R$ 329,90 sem juros"
             />
             <Card
-              photo={product}
-              title="Smartphone Samsung Galaxy J8 64GB Dual Chip Android 8.0"
-              price="R$ 1.299,00"
-              instalments="10x de R$ 129,90 sem juros"
+              photo={product7}
+              title="Liquidificador Philips Walita Problend Preto RI2134/9"
+              price="R$ 139,99"
+              instalments="6x de R$ 23,33 sem juros"
             />
             <Card
-              photo={product}
-              title="Smartphone Samsung Galaxy J8 64GB Dual Chip Android 8.0"
-              price="R$ 1.299,00"
-              instalments="10x de R$ 129,90 sem juros"
+              photo={product8}
+              title="Monitor Gamer LED 49 Curvo 1ms 144hz Double Full HD"
+              price="R$ 5.999,99"
+              instalments="10x de R$ 599,90 sem juros"
             />
             <Card
-              photo={product}
-              title="Smartphone Samsung Galaxy J8 64GB Dual Chip Android 8.0"
-              price="R$ 1.299,00"
-              instalments="10x de R$ 129,90 sem juros"
+              photo={product9}
+              title="PC Gamer EasyPC FPS Intel Core i3 8GB 1TB"
+              price="R$ 1.899,00"
+              instalments="10x de R$ 189,90 sem juros"
             />
           </div>
         </section>
