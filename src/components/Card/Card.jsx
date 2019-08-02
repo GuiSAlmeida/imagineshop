@@ -5,7 +5,7 @@ import './style.scss';
 const Card = props => {
     return (
         <div className="card">
-            <Link to="/produto">
+            <Link to={`/produto/${props.id}`} >
                 <img className="card-image" src={props.photo} alt={props.title} />
                 <h3 className="card-title">{props.title}</h3>
                 <span className="card-price">{props.price}</span>

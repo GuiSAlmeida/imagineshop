@@ -10,7 +10,7 @@ import Ads from '../../components/Ads';
 import ads3 from '../../images/ads3.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.scss';
-
+import products from '../../products.js';
 
 const adsList = [
   {
@@ -21,26 +21,45 @@ const adsList = [
 ];
 
 class Product extends Component {
+  constructor(props) {
+    super(props);
+  
+  
+    this.state = {};
+  }
+
+
 
   componentDidMount() {
+    const product = products.find(product => {
+      return product.id === this.props.match.params.id;
+    });
+
+    this.setState({ product: product });
+
     window.scrollTo(0,0);
   }
 
   render() {
+    console.log(this.state);
+    if (!this.state.product) { //fallback
+      return "";
+    }
     return (
       <>
         <Ads advertisements={adsList} />
+
         <section className="product-header">
           <div className="product-image">
-            <img src={productImage} alt="Foto do produto"/>
+            <img src={ this.state.product.photo } alt="Foto do produto"/>
           </div>
 
           <div className="product-overview">
-            <h1>Notebook Samsung Expert VF3BR Intel Core i7 8GB</h1>
+            <h1>{this.state.product.title}</h1>
 
             <div className="product-price">
-              <span>R$ 2.699,99</span>
-              <small>10x de R$ 299,99 sem juros</small>
+              <span>{this.state.product.price}</span>
+              <small>{this.state.product.instalments}</small>
             </div>
 
             <button className="product-button-buy">
